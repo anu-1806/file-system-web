@@ -1,0 +1,52 @@
+.listing {
+    margin: 3.21rem 3.36rem;
+    margin-right: 0;
+    font-family: lato;
+    color: #535B62;
+    font-size: 1.14rem;
+
+    .file-folder-div {
+        text-align: center;
+        display: inline-block;
+        padding: 0.96rem;
+        margin-right: 4.11rem;
+        position: relative;
+        border-radius: 10px;
+        cursor: pointer;
+
+        img {
+            max-width: 100%;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .file-folder-div:hover {
+        background: #E6F5FF;
+    }
+    .file-folder-div:last-of-type {
+        margin-right: 0;
+    }
+    
+    .file-div::before {
+        content: '.'attr(data-extension);
+        font-size: 1rem;
+        position: absolute;
+        bottom: 4.2rem;
+        left: 2.1rem;
+        color: #fff;
+    }
+
+    .create-div:hover {
+        background: transparent;
+    }
+
+    .search-results {
+        font-size: 1rem;
+        color: #AFB2B6;
+        /* cursor: pointer; */
+        text-decoration: underline;
+        text-align: right;
+        padding-right: 5rem;
+    }
+}
